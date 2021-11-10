@@ -58,7 +58,7 @@ class QuizInterface:
         self.give_feedback(is_right)
 
     def give_feedback(self, is_right):
-        if is_right:
+        if is_right == "False":
             self.canvas.config(bg="blue")
         else:
             self.canvas.config(bg="green")
